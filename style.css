@@ -1,0 +1,276 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(yyyy.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.loginbox{
+    width: 320px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #fff;
+    top: 50%;
+    right: -2%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 80px 50px;
+    border-radius: 15px;
+}
+
+.avatar{
+    width: 90px;
+    height: 85px;
+    position: absolute;
+    top: -7.5%;
+    left: calc(50% - 50px);
+    padding: 10px;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(100, 29, 29);
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0 0 10px;
+    font-family: inherit;
+    color: rgb(87, 21, 21);
+}
+
+.loginbox input{
+    width: 220px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    
+}
+
+.loginbox input[type="text"]
+{
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background: transparent;
+    outline: none;
+    height: 30px;
+    font-size: 12px;
+    color: rgb(124, 55, 55);
+}
+
+.loginbox input[type="password"]
+{
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background: transparent;
+    outline: none;
+    height: 30px;
+    font-size: 12px;
+    color: gainsboro;
+    margin-bottom: 40px;
+    color: rgb(124, 55, 55);
+}
+
+.loginbox input[type="button"]
+{
+    border: none;
+    outline: none;
+    height: 30px;
+    background: #b91c1c;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+
+}
+
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: teal;
+    color: #000;
+}
+
+.loginbox a
+{
+    text-decoration: none;
+    font-size: 10px;
+    line-height: 20px;
+    color: rgb(34, 7, 7);
+
+}
+
+.loginbox a:hover
+{
+    color: rgb(255, 8, 0);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 10px;
+    padding-top: 30px;
+}
+
+/*nav
+{   
+    flex: 1;
+    text-align: right;
+}
+
+nav ul
+{
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li
+{
+    display: inline-block;
+    margin-right: 60px;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    font-family: sans-serif;
+    opacity: 0.8;
+}
+
+nav ul li a:hover
+{
+    color: steelblue;
+    opacity: 1.0;
+}*/
+
+.logo img
+{
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 1.8%;
+    left: calc(4.5% - 50px);
+    padding: 10px;
+    border-style: inset;
+    border-color: rgb(35, 82, 184);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left-color: rgb(93, 253, 78);
+    border-top-color: rgb(93, 253, 78);
+    border-width: 3px;
+    opacity: 0.9;
+    
+}
+
+.logo img:hover{
+    opacity: 1.0;
+}
+
+input[type="checkbox"]{
+    border: none;
+    margin: none;
+    font-size: 12px;
+    position: absolute;
+    top: 58.2%;
+    right: 25.1%;
+    opacity: 0.6;
+}
+
+label[for="checkbox"]{
+    font-size: 12px;
+    border: none;
+    font-family: sans-serif;
+    position: absolute;
+    top: 58.5%;
+    right: 19.7%;
+    color: rgb(87, 21, 21);
+    opacity: 0.7;
+}
+
+
+
+@media only screen and (max-width: 426px) {
+    .loginbox {
+        position: absolute;
+        right: -25%;
+    }
+    .logo img {
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        left: calc(39%);
+        border: none;
+    }
+    input[type="checkbox"]{
+        right: 72.5%;
+    }
+    label[for="checkbox"]{
+        right: 53%;
+    }
+  }
+
+
+@media only screen and (max-width: 376px) {
+    .loginbox {
+        position: absolute;
+        right: -35%;
+      
+    }
+    .logo img {
+        height: 75px;
+        width: 75px;
+        position: absolute;
+        left: calc(38%);
+        border: none;
+    }
+    input[type="checkbox"]{
+        right: 75.5%;
+    }
+    label[for="checkbox"]{
+        right: 54%;
+    }
+  }
+
+  @media only screen and (max-width: 321px) {
+    .loginbox {
+        position: absolute;
+        right: -43.5%;
+        height: 400px;
+        width: 300px;
+      }
+      .logo img {
+        height: 70px;
+        width: 70px;
+        position: absolute;
+        left: calc(37%);
+        border: none;
+    }
+    input[type="checkbox"]{
+        top: 60%;
+        right: 76.5%;
+    }
+    label[for="checkbox"]{
+        top: 60.5%;
+        right: 52%;
+    }
+    .loginbox input[type="submit"]{
+        position: absolute;
+        top: 65%;
+    }
+  }
+
+
+  
